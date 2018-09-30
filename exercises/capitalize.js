@@ -6,7 +6,17 @@
  * and in lowercase for the rest of the string
  *
  */
+function capitalize(string){
+    let stringArr = string.split('');
+    
+    let newString = stringArr[0].toUpperCase();
+    for(let i=1; i< stringArr.length;i++){
 
+        newString += stringArr[i].toLowerCase();
+
+    }
+    return newString;
+}
 
 //* Begin of tests
 const assert = require('assert')
